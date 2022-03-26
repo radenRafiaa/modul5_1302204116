@@ -36,7 +36,20 @@ namespace modul5_1302204116
             video1.IncreasePlayCount(4116);
             user1.PrintAllVideoPlaycount();
             Console.WriteLine(user1.GetTotalVideoPlayCount());
-            user1.GetTotalVideoPlayCount();
+
+            Console.WriteLine("----menguji prekondisi, exception dan postcondition----");
+            SayaTubeUser user2 = new SayaTubeUser("DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI DENRAFI");
+            SayaTubeVideo video11 = new SayaTubeVideo("Review Film Captain America: Winter Soldier Winter Soldier Winter Soldier Winter Soldier Winter Soldier Winter Soldier Winter Soldier " +
+                "Winter Soldier Winter Soldier Winter Soldier Winter Soldier Winter Soldier Winter Soldier Winter Soldier Winter Soldier Winter SoldierWinter Soldier Winter Soldier oleh DENRAFI");
+            user2.AddVideo(video11);
+            user2.PrintAllVideoPlaycount();
+
+            for (int i = 0; i < 86; i++)
+            {
+                video1.IncreasePlayCount(25000000);
+            }
+
+            Console.WriteLine(value: "Total Play Count dari user " + user1.username + " : " + user1.GetTotalVideoPlayCount());
         }
     }
 }
